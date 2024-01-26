@@ -10,7 +10,7 @@ void isim()
 
 	while (a<='9')
 	{
-		write(1.&a.1);
+		write(1,&a,1);
 		while (a<='9')
 		{
 			/* code */
