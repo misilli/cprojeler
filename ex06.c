@@ -12,7 +12,7 @@ void isim()
 	{
 		
 		b=0;
-		while (b>='9')
+		while (b<='9')
 		{
 			write(1,&a,1);
 
