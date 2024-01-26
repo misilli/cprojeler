@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 void isim()
 {
@@ -11,11 +12,10 @@ void isim()
 	while (a<='9')
 	{
 		
-		b=0;
+		b='0';
 		while (b<='9')
 		{
 			write(1,&a,1);
-
 			write(1,&b,1);
 			b++;			
 			
