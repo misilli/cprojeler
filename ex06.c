@@ -15,10 +15,23 @@ void isim()
 		b='0';
 		while (b<='9')
 		{
-			write(1,&a,1);
-			write(1,&b,1);
-			b++;			
-			
+			c ='0';
+			while (c<='9')
+			{
+				d='0';
+				while(d<='9')
+				{	
+					write(1,&a,1);
+					write(1,&b,1);
+					write(1," ",1);
+					write(1,&c,1);
+					write(1,&d,1);
+					write(1,",",1);
+					d++;
+				}
+				c++;
+			}
+			b++;
 		}
 		
 		a++;
