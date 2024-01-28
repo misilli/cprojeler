@@ -17,6 +17,7 @@ void isim()
 		{
 			write(1,&a,1);
 			write(1,&b,1);
+			write(1,",",1);
 			b++;			
 			
 		}
