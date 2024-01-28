@@ -1,60 +1,59 @@
- #include <unistd.h>
+#include <unistd.h>
 
-void	ft_putchar(char c)
+void    ft_putchar(char c)
 {
-	write(1, &c, 1);
+    write(1, &c, 1);
 }
 
 void ft_putnbar(int nb)
 {
-	int sayi;
-	
-	sayi = nb;
+    int dec;
+    
+    dec = nb ; 
+    int basamak_sayisi = 1;
 
-    int basamak_sayisi = 0;
-
-    // Sayının her basamağına ulaşma
-    while (sayi > 0) {
-        sayi /= 10; // Sayıyı 10'a böleriz
+    if(nb<0)
+        dec=dec*-1;
+    
+    while (dec > 9) {
+        dec=dec/ 10; 
         basamak_sayisi++;
-		
+        
     }
 
-	int n;
-
-	n = basamak_sayisi;
-	while (n < 0)
-	{
-		if (n <0)
-		{
-			ft_putchar('a');
-		}
-		else
-		{
-		  	ft_putchar(nb / 10^n + 48);
-			ft_putchar(nb % 10^n + 48);
-			nb= nb - (nb / 10^n + 48)*10^n;
-		}
-		n--;
-	}
+    power(nb,basamak_sayisi);
 }
-void power(int power ,int nb)
+void power(int nb,int basamak_sayisi)
 {
-	int j;
+    int j;
+    int power;
 
-	j=0;
-	while ( nb <=j)
-	{
-		power = power *10;
-		j++;
-	}
-	git(power);
+    j=2;
+    power =1;
+    while ( basamak_sayisi >=j)
+    {
+        power = power *10;
+        j++;
+    }
+    giti(power, nb);
 }
-int git (int)
-{}
+void giti (int b,int nb)
+{
+    if(nb<0)
+        ft_putchar('-');
+        nb=nb*-1;
+        
+    while (b>1)
+    {
+        ft_putchar(nb / b + 48);
+        nb = nb -  (nb / b)*b;
+        b=b/10;
+    }
+    ft_putchar(nb % 10 + 48);
+}
 
 
 int main()
 {
-	ft_putnbar(1312123232);
+    ft_putnbar(0);
 }
