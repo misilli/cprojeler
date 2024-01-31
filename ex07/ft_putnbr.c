@@ -1,10 +1,9 @@
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_putchar(char c , char b)
 {
 	write(1, &c, 1);
 }
-
 void	ft_putnbar(int nb)
 {
 	int	dec;
