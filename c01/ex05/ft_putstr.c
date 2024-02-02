@@ -23,3 +23,9 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
+
+int main()
+{
+	char ko[]="hello";
+	ft_putstr(ko);
+}
