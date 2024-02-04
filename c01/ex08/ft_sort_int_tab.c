@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmidilli <mmidilli@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/04 14:55:41 by mmidilli          #+#    #+#             */
+/*   Updated: 2024/02/04 14:55:41 by mmidilli         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_sort_int_tab(int *tab, int size)
@@ -18,23 +30,6 @@ void	ft_sort_int_tab(int *tab, int size)
 			j--;
 		}
 		tab[j + 1] = temp;
-		i++;
-	}
-}
-
-int	main(void)
-{
-	int ko[] = {1, 4, 3, 2, 5, 8, 7, 9, 6};
-	int sa = 9;
-	ft_sort_int_tab(ko, sa);
-	int i;
-	char t;
-
-	i = 0;
-	while (ko[i] != '\0')
-	{
-		t = ko[i] + 48;
-		write(1, &t, 1);
 		i++;
 	}
 }
