@@ -1,5 +1,14 @@
-#include <stdio.h>
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmidilli <mmidilli@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/05 20:41:33 by mmidilli          #+#    #+#             */
+/*   Updated: 2024/02/05 20:41:33 by mmidilli         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 char	*ft_strupcase(char *str)
 {
@@ -15,11 +24,4 @@ char	*ft_strupcase(char *str)
 		i++;
 	}
 	return (str);
-}
-
-int main ()
-{
-    char ko[]="KAKADEGIL";
-    printf("%s",ft_strupcase(ko));
-    
 }
