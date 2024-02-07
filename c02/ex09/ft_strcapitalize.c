@@ -32,8 +32,14 @@ char	*ft_strcrapitalize(char *str)
 			str[i] -= 32;
 		}
 		i++;
-		if (str[i] < 'a' || str[i] > 'z')
+		if (str[i] < 'a' || str[i] > 'z' )
+		{
 			temp = 0;
+			if (str[i] >= 48 && str[i] <= 57)
+			{
+				temp=1;
+			}
+		}
 	}
 	return (str);
 }
