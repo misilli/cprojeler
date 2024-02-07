@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Muharrem/Desktop/cprojeler",
-      "program": "c:/Users/Muharrem/Desktop/cprojeler/build/Debug/outDebug",
+      "cwd": "c:/Users/Muharrem/Desktop/cprojeler/c03/ex03",
+      "program": "c:/Users/Muharrem/Desktop/cprojeler/c03/ex03/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
