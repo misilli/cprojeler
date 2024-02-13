@@ -6,14 +6,14 @@
 /*   By: mmidilli <mmidilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 12:49:46 by mmidilli          #+#    #+#             */
-/*   Updated: 2024/02/13 12:59:13 by mmidilli         ###   ########.fr       */
+/*   Updated: 2024/02/13 15:43:55 by mmidilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strstr(char *str, char *to_find)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
