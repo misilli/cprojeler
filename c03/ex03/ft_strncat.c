@@ -6,11 +6,9 @@
 /*   By: mmidilli <mmidilli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 20:33:21 by mmidilli          #+#    #+#             */
-/*   Updated: 2024/02/13 12:49:23 by mmidilli         ###   ########.fr       */
+/*   Updated: 2024/02/14 13:50:25 by mmidilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
@@ -28,10 +26,6 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 		dest[c + i] = src[c];
 		c++;
 	}
-	while (c < nb)
-	{
-		dest[c + i] = '\0';
-		c++;
-	}
+	dest[c + i] = '\0';
 	return (dest);
 }
