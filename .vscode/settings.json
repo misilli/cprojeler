@@ -8,6 +8,7 @@
   "C_Cpp_Runner.useMsvc": false,
   "C_Cpp_Runner.warnings": [
     "-Wall",
+    "-Werror",
     "-Wextra",
     "-Wpedantic",
     "-Wshadow",
