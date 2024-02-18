@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Muharrem/Desktop/cprojeler/c03/ex03",
-      "program": "c:/Users/Muharrem/Desktop/cprojeler/c03/ex03/build/Debug/outDebug",
+      "cwd": "c:/Users/Muharrem/Desktop/cprojeler/morse_decoder",
+      "program": "c:/Users/Muharrem/Desktop/cprojeler/morse_decoder/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
